@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# setup script for the attendance tracker project
-
 read -p "Enter project name: " name
 
 PROJECT_DIR="attendance_tracker_$name"
@@ -99,11 +97,10 @@ JSONEOF
 
 echo "Created Helpers/config.json"
 
-# create an empty log file
+# create an reports log file
 echo "No reports yet. Run attendance_checker.py to generate one." > $PROJECT_DIR/reports/reports.log
 echo "Created reports/reports.log"
 
-# ask user if they want to change thresholds
 echo ""
 echo "Default thresholds are: warning=75%, failure=50%"
 read -p "Do you want to change the thresholds? (y/n): " answer
