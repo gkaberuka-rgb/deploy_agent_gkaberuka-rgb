@@ -1,8 +1,0 @@
-{
-    "total_sessions": 40,
-    "run_mode": "dry_run",
-    "thresholds": {
-        "warning": 76,
-        "failure": 40
-    }
-}
